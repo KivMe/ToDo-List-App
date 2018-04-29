@@ -9,7 +9,7 @@ body{
 
 #container{
     margin:100px auto;
-    width:360px;
+    width:370px;
     background:#F7F7F7;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.1);   
 }
@@ -24,7 +24,7 @@ h1{
     font-weight: normal;
 }
 
-span{
+.tasks{
     background-color:red;
     color:white;
     height:40px;
@@ -67,6 +67,7 @@ input{
     box-sizing: border-box;
     border: 3px solid rgba(0,0,0,0);
     outline:none;
+    display:none;
 }
 
 input:focus{
@@ -83,8 +84,20 @@ input:focus{
     float:right;
     padding-top:3px;
 }
-
 .noDisplay{
 display:none;
 
 }
+/* === Footer ===*/
+footer p{
+color:#9d9d9d;
+font-weight:600;
+text-transform: uppercase;
+    padding-top:100px;
+}
+.container span{
+    color:darkgreen;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+

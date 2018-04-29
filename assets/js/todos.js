@@ -1,4 +1,5 @@
-$("ul").on("click", "li", function(){
+$(document).ready(function(){
+    $("ul").on("click", "li", function(){
 
     $(this).toggleClass("grey");
 
@@ -22,7 +23,7 @@ $("input[type = 'text']").on("keypress", function(event){
         
         var todoText = $(this).val();
         
-        $("ul").append("<li><span><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></span> " + todoText + "</li>");
+        $("ul").append("<li><span class=\"tasks\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></span> " + todoText + "</li>");
         $(this).val("");
     
     }
@@ -41,4 +42,5 @@ $(".fa-plus").click(function(){
     
     }
 
+});
 });
